@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 3px solid;
+            height: 500px;
+            width: 500px;
+          
+        }
+        #a{
+            text-align: center;
+            color: blueviolet;
+        }
+        form{
+            padding: 20px;
+        }
+        h1{
+            color: rgb(14, 13, 13);
+        }
+        label{
+            color: rgb(63, 55, 55);
+            font-size:20px;
+        }
+        form select{
+            margin: 8px 0;
+        }
+        form label{
+            display: inline-block;
+            width:100px;
+        }
+        #f,#g{
+           margin-left:50px;
+           padding: 10px;
+        }
+        #h{
+            margin-left: 80px;
+            padding: 10px;
+            background-color:  blueviolet;
+        }
+        #b,#c{
+            margin-left: 20px;
+            font-size:20px;
+        }
+        .s{
+        color: red;
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <h1 id="a">BMI CALCULATOR</h1>
+    <form action="" onCALCULATEBMI="return aa()">
+        <label for="age" >AGE:</label>
+        <input type="number" id="age" placeholder="Please Enter Age">
+        <span id="s1" class="s">*pls enter a age</span>
+        <br><br>
+        <label for="height">HEIGHT<br>(cm):</label>
+        <input type="text" id="height" placeholder="Please Enter Height">
+        <span id="s2" class="s" >*pla enter height</span>
+        <br><br>
+        <label for="weight">WEIGHT<br>(kg):</label>
+        <input type="text" id="weight" placeholder="Please Enter Weight">
+        <span  id="s3" class="s">*pls enter weight</span>
+        <br><br>
+        <input type="button" id="f" value="MALE">
+        <input type="button" id="g" value="FEMALE">
+        <BR><BR><BR>
+        <input type="button" id="h" value="CALCULATE BMI" onclick="aa()">
+    </form>
+        
+    <h1 id="b">BMI:<span id="d"></span></h1>
+    <h1 id="c">RESULT:<span id="e"></span></h1>
+
+</body>
+<script>
+    function aa(){
+    //     a=document.getElementById('h').value
+    //     document.getElementById('h').value=eval(a)
+    //     var BMI= kg/m2
+    //     a=BMI
+    //    document.getElementById('d').innerHTML=a
+
+
+
+    var x=document.getElementById('age').value
+    var y=document.getElementById('height').value
+    var z=document.getElementById('weight').value
+   
+   if(!x==""){
+    document.getElementById('s1').style.display="none"
+   }
+   else{
+    document.getElementById('s1').style.display="inline"
+   }
+   if(!y==""){
+    document.getElementById('s2').style.display="none"
+   }
+   else{
+    document.getElementById('s2').style.display="inline"
+   }
+   if(!z==""){
+    document.getElementById('s3').style.display="none"
+   }
+   else{
+    document.getElementById('s3').style.display="inline"
+   }
+  
+   return false;
+    }
+</script>
+</html>

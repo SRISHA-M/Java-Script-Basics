@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    //object
+    var a={name:"srisha",
+           age:20,
+           std:2,
+           place:["salem","chennai"],
+           graduate:"true",
+           language:{b:"tamil",
+           c:"english"},          
+           hi:function(){
+            return `"hi"${this.name}`
+           }
+
+    }
+    console.log(a)
+    console.log(a.name)
+    console.log(a.place)
+    console.log(a.place[0])
+    console.log(a.language)
+    console.log(a.language.b)
+    console.log(a.hi())
+    //inheritance
+    var a1=Object.create(a)
+        a1.name="sidhu"    
+    console.log(a1)
+    console.log(a.name)
+    //destructuring
+    var movie={
+        actor:"vijay",
+        actress:"nayanthara",
+        dir:"atlee",
+        music:"yuvan"
+    }
+        var{actor,actress,dir,music}=movie
+        var{actress:heroin}=movie
+        console.log(movie)
+        console.log(actor)
+        console.log(heroin)
+        // console.log(Object.key(movie))
+        // console.log(Object.value(movie))
+        delete movie.dir
+        console.log(movie)
+        console.log(movie.hasOwnProperty("dir"))
+        //JSON
+        var x=JSON.stringify(movie)
+        console.log(movie)
+        console.log(typeof(x))
+        var y=JSON.parse(x)
+        console.log(b)
+        console.log(typeof(y))
+       
+</script>
+</html>

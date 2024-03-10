@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 500px;
+            width:800px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img onmouseenter="a()" onclick="b()" onmouseleave="c()" id="ab" src="img1.jpg" alt="">
+    
+</body>
+    <script>
+        function a(){
+            document.getElementById('ab').src="img2.jpg"
+        }
+        function b(){
+            document.getElementById('ab').src="img3.jpg"
+        }
+        function c(){
+            document.getElementById('ab').src="img1.jpg"
+            
+        }
+    </script>
+</html>

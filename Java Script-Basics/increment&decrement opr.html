@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mi()">-</button>
+    <input type="text" value="0" id="in">
+    <button onclick="pl()">+</button>
+    
+</body>
+<script>
+    function mi(){
+        var a=document.getElementById('in').value 
+        document.getElementById('in').value=--a
+        console.log(a)
+        if(a<-10){
+        document.getElementById('in').value=10
+    }
+       
+    }
+    function pl(){
+        var a=document.getElementById('in').value
+        document.getElementById('in').value=++a
+        console.log(a)
+        if(a>10){
+        document.getElementById('in').value=-10
+    }
+    }
+    
+  
+   
+</script>
+</html>

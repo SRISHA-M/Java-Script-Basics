@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="" id="a">
+    <button onclick="ab()">click</button>
+    <h1 id="h1"></h1>
+</body>
+<script>
+    function ab(){
+         var z=document.getElementById('a').value 
+    if((z<0)){
+        document.getElementById('h1').innerHTML="invalid number"
+    }
+    else if((z<10)&&(z>=0)){
+        document.getElementById('h1').innerHTML="sigle digit number"
+    }
+    else if((z<100)){
+        document.getElementById('h1').innerHTML="double digit number"
+    }
+    else{
+        document.getElementById('h1').innerHTML="large number"
+    }
+    }
+</script>
+</html>

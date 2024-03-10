@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mailvalidation.css">
+</head>
+<body>
+    <form action="" onsubmit="return ab()">
+        <h1>REGISTRATION FORM</h1>
+        <label for="name">NAME:</label>
+        <input type="text" id="name">
+        <span id="d">*pls enter a name</span>
+        <br><br>
+        <label for="em">EMAIL:</label>
+        <input type="email" id="em">
+        <span id="e">*pls enter  a valid mail ID</span>
+        <br><br>
+        <label for="age">DOB:</label>
+        <input type="date" id="age">
+        <span id="f">*pls select a DOB</span>
+        <br><br>
+        <label for="tel">MOBILE:</label>
+        <input type="tel" id="tel">
+        <span id="g">*pls enter a valid mobile number</span>
+        <br><br>
+       <input type="button" value="SUBMIT" id="s1" onclick="ab()">
+       <input type="button" value="CANCEL" id="s2" onclick="ac()">
+
+    </form>
+    <section id="a">
+        <h1   class="b1">my name is:<span id="b"></span></h1>
+        <h1   class="b1">my Email ID is:<span id="c"></span></h1>
+    </section>
+    <script src="mailvalidation.js"></script>
+</body>
+</html>

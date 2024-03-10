@@ -1,0 +1,16 @@
+#a{
+    width: 500px;
+    height: 400px;
+}
+button{
+    position: absolute;
+    top:200px;
+    font-size: 20px;
+background-color: rgb(230, 137, 15);
+}
+#pl{
+    left: 470px;
+}
+#mi{
+    left:10px;
+}
